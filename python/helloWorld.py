@@ -1,10 +1,23 @@
-#chap 2
-message = "Hello, World from Variable City!"
-print(message)
+"""
+Docstring for python.helloWorld
 
-message = "Hello again, World!"
-print(message)
+contains simple "Hello, World!" examples. made to help with learning, teaching, and practicing python programming.
 
-#chap 1
+mostly for self use, references, and practice of basic concepts.
+
+author: Atiyah Ellerbee
+date: December 2025
+last modified: 12/25
+"""
+
+
+#prac 2
+message = "Hello, World from Variable City!";
+print(message);
+
+message = "Hello again, World!";
+print(message);
+
+#prac 1
 print("Hello, World!")
 # This is a simple Python program that prints "Hello, World!" to the console.
