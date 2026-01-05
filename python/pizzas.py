@@ -1,0 +1,13 @@
+pizza = ['pepperoni', 'mushroom', 'ground beef', 'extra cheese'];
+for topping in pizza:
+    print(f"I like {topping} pizza!");
+
+print("I really love pizza!");
+
+## animals
+
+animals = ['dog', 'cat', 'rabbit'];
+for animal in animals:
+    print(f"A {animal} would make a great pet.");
+
+print("And any of these animals could have floppy ears!");
