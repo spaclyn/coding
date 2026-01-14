@@ -186,6 +186,11 @@ namespace OOPReview
             //2. Try using the keyword 'var' instead of IEchoer. Then what type is echoer?
             IEchoer echoer = new Echoer();
             echoer.Echo("Hello World!");
+            //((Echoer)echoer).HelloWorld(); 
+            // --> CASTING. its literally telling the program not to worry about things, it is what it is
+            // --> this is implementing an interface, NOT INHERITING from an interface.
+            // we IMPLENT AN INTERFACE. we INHERIT A CLASS
+            // --> you can cast to an interface
 
             echoer = new AngryEchoer();
             echoer.Echo("Hello World!");
