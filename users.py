@@ -31,3 +31,14 @@ for number in numberList:
         print(f'{number}rd')
     else:
         print(f'{number}th')
+
+#dictionary practice
+user1 = {
+    'username': 'efermi',
+    'first': 'enrico',
+    'last': 'fermi',
+    }
+
+for x,y in user1.items():
+    print(f"\nKey: {x}")
+    print(f"Value: {y}")
