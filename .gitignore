@@ -3,3 +3,5 @@
 /tempCodeRunnerFile.py
 /movies_cleaned.py
 python/numbers.py
+.DS_Store
+.gitignore
