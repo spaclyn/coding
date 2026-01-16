@@ -31,6 +31,11 @@ pyGlossary = {
     'elif': 'apart of if-else statements that can work between if and else parameters',
     'list': 'an array of items that are typically assigned and saved together, different from dictionary',
     'for loop': 'a loop that will iterate through a list or other iterable objects.',
+    'dictionary': 'a array that takes key-value pairs together',
+    'set': 'a set is not a dictionary. a set typically isn\'t a key-value pair',
+    'constant': 'a variable that reamins unchanged, typically uppercase',
+    'tuple': 'ordered and immutable objects, once created you cannot change them',
+    'boolean': 'typically represent a truth value: true or false.'
 }
 
 for term, deff in pyGlossary.items():
