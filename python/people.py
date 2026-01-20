@@ -4,16 +4,55 @@ person0 = {
     'lastName':'Stan',
     'City': 'New York',
     }
+person1 = {
+    'firstName':'Tom',
+    'lastName':'Hiddleston',
+    'City': 'London',
+}
+person2 = {
+    'firstName':'Troy',
+    'lastName':'Baker',
+    'City': 'Long Beach',
+}
+
+people = [person0, person1, person2]
+for person in people:
+    print(person)
+
+pets = {
+    'Stan': {
+        'type':'Bird',
+        'owner': 'Gabby',
+    },
+    'Tom': {
+        'type':'Dog',
+        'owner': 'Nene',
+    },
+    'Alpine': {
+        'type':'Cat',
+        'owner': 'James',
+    },
+}
+
+for pet, petInfo in pets.items():
+    print(f"\nThis is {pet}")
+    petType = f"They are a {petInfo['type']}"
+    ownerName = petInfo['owner']
+
+    print(f"{petType}")
+    print(f"Their owner is {ownerName}")
+
+
 
 print(f"The person I like is named {person0['firstName']} {person0['lastName']}, and he lives in {person0['City']}");
 
 #favorite number 
 favNumbers = {
-    'Jan': 5,
-    'Nana': 20,
-    'Hero': 2,
-    'Goob': 99,
-    'Atiyah': 3,
+    'Jan': [5, 6, 7],
+    'Nana': [11, 20],
+    'Hero': [2, 0],
+    'Goob': [99, 11],
+    'Atiyah': [3, 13],
     }
 
 print(f"Favrite Number list: {favNumbers}")
@@ -21,8 +60,10 @@ print(f"Favrite Number list: {favNumbers}")
 # to iterate over all values simulantously: dictName.keys()
 # to iterate over just keys you would do: dictName.keys()
 # to iterate over just values you would do: dictName.values()
-for name, numb in favNumbers.items():
-    print(f"{name}'s favorite number is {numb}")
+for name, numbers in favNumbers.items():
+    print(f"\n{name.title()}'s favorite number is:")
+    for number in numbers:
+        print(f"\t{number}")
 
 #glossary
 pyGlossary = {
