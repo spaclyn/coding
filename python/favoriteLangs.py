@@ -9,6 +9,18 @@ favLanguages = {
     'barbie': 'c sharp'
 }
 
+favoriteLanguages = {
+    'jen': ['python','rust'],
+    'sarah': ['c'],
+    'edward': ['rust', 'go'],
+    'phil': ['python', 'haskell'],
+}
+
+for name, languages in favoriteLanguages.items():
+    print(f"\n{name.title()}'s favorite languages are:")
+    for language in languages:
+        print(f"\t{language.title()}")
+
 language = favLanguages['sarah'].title()
 print(f"Sarah's favorite language is {language}");
 
