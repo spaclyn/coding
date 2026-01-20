@@ -17,9 +17,14 @@ favoriteLanguages = {
 }
 
 for name, languages in favoriteLanguages.items():
-    print(f"\n{name.title()}'s favorite languages are:")
-    for language in languages:
-        print(f"\t{language.title()}")
+    if len(languages) == 1: #This is so better!!
+        print(f"\n{name.title()}'s favorite language is:")
+        for language in languages:
+            print(f"\t{language.title()}")
+    else:
+        print(f"\n{name.title()}'s favorite languages are:")
+        for language in languages:
+            print(f"\t{language.title()}")
 
 language = favLanguages['sarah'].title()
 print(f"Sarah's favorite language is {language}");
