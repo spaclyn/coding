@@ -1,5 +1,5 @@
 #pizza for dictionaries
-"""
+
 pizza = {
     'crust': 'thick',
     'toppings': ['mushroom', 'extra cheese', 'pepperoni']
@@ -9,7 +9,7 @@ print(f"You ordered a {pizza['crust']}-crust pizza "
       "with the following toppings:")
 for topping in pizza['toppings']:
     print(f"\t{topping}")
-"""
+
 
 #user input for toppings 
 pizzaTops = []
@@ -28,12 +28,11 @@ print("\nHere are the toppings on your pizza:")
 for toppings in pizzaTops:
     print(f"\t{toppings}")
 
-"""pizza = ['pepperoni', 'mushroom', 'ground beef', 'extra cheese'];
+pizza = ['pepperoni', 'mushroom', 'ground beef', 'extra cheese'];
 for topping in pizza:
-    return none
-   print(f"I like {topping} pizza!");
+    print(f"I like {topping} pizza!");
 
-#print("I really love pizza!");
+print("I really love pizza!");
 
 friendsPizza = pizza[:]
 friendsPizza.append('pineapple');
@@ -48,10 +47,8 @@ for p in friendsPizza:
 
 
 ## animals
-
 animals = ['dog', 'cat', 'rabbit'];
 for animal in animals:
     print(f"A {animal} would make a great pet.");
 
 print("And any of these animals could have floppy ears!");
-"""
