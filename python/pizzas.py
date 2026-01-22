@@ -1,4 +1,5 @@
 #pizza for dictionaries
+"""
 pizza = {
     'crust': 'thick',
     'toppings': ['mushroom', 'extra cheese', 'pepperoni']
@@ -8,6 +9,24 @@ print(f"You ordered a {pizza['crust']}-crust pizza "
       "with the following toppings:")
 for topping in pizza['toppings']:
     print(f"\t{topping}")
+"""
+
+#user input for toppings 
+pizzaTops = []
+message = "\nWhat do you want on your pizza?"
+message += "\n(Enter 'done' to exit.) "
+
+while True:
+    pizzaTop = input(message)
+    if pizzaTop == 'done':
+        break
+    else:
+        pizzaTops.append(pizzaTop)
+        print(f"We'll add {pizzaTop} to your pizza")
+
+print("\nHere are the toppings on your pizza:")
+for toppings in pizzaTops:
+    print(f"\t{toppings}")
 
 """pizza = ['pepperoni', 'mushroom', 'ground beef', 'extra cheese'];
 for topping in pizza:
