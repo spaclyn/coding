@@ -99,9 +99,19 @@ def shortestPath(grid):
     return -1
 
 #Count comps (dfs)
-def countComponents(graph):
-    if not graph:
-        return 0
+def countComponents(start, graph):
+    stack = [start]
+    visited = set()
+
+    while stack:
+        node = stack.pop()
+        if node in visited:
+            continue
+
+        for nei in graph[node]:
+            if nei not in visited:
+                stack.append(nei)
+    
     #then i need to go through and make sure to check, making sure to put down visit with the node so that it will be valid 
 
 #valid path (bfs)
