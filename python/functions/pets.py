@@ -17,3 +17,8 @@ def makeLargeShirt(text, size = 'L'):
     """Display information about a large shirt"""
     print(f"\nYou have ordered a shirt of size {size} with the text '{text}' printed on it.")
 
+makeLargeShirt('Large Shirt');
+
+def makeCities(city, country):
+    """Displays information about a city and its country"""
+    print(f"\n{city.title()} is in {country.title()}")
