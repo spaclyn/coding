@@ -6,3 +6,4 @@ python/numbers.py
 .DS_Store
 .gitignore
 .vscode/launch.json
+python/functions/__pycache__/pizza.cpython-313.pyc
