@@ -1,10 +1,5 @@
-def greetUsers(names):
-    """Prints a simple greeting to each user in the list."""
-    for name in names:
-        msg = f"Hello, {name.title()}!";
-        print(msg);
-
+import masterFunctions as mf;
 usernames = ['hannah', 
              'ty',
              'margot'];
-greetUsers(usernames);
+mf.greetUsers(usernames);

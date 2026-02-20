@@ -1,11 +1,9 @@
+from masterFunctions import *;
 messags = ["Hi Guys",
             "Who's ready to lean Python?",
             "Do you like programming? I do!"];
 
-def showMessages(messags):
-    """Prints a serious of short messages."""
-    for messag in messags:
-        print(messag);
+
 showMessages(messags);
 
 greetings = ['Hey There',

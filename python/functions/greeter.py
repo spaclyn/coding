@@ -1,6 +1,4 @@
-def greetUser(username):
-    """Displaying a simple greeting"""
-    print(f"Hello, {username.title()}!")
+from masterFunctions import greetUser;
 
 greetUser('Jesse')
 greetUser('Sarah') 
