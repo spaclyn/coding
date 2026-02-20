@@ -22,6 +22,7 @@ yourRestaurant = Restaurant('Chancellors', 'American');
 yourRestaurant.describeRestaurant();
 yourRestaurant.openRestaurant();
 
-theirRestaurant = Restaurant('Suishi Boss', 'Japanese');
+theirRestaurant = Restaurant('Sushi Boss', 'Japanese');
 theirRestaurant.describeRestaurant();
 theirRestaurant.openRestaurant();
+
