@@ -8,6 +8,7 @@ class User:
         self.firstName = firstName;
         self.lastName = lastName;
         self.age = age;
+        self.loginAttempts = 0;
     
     def describeUser(self):
         """Simulate describing the user."""
@@ -23,6 +24,18 @@ class User:
         """Simulate greeting the user."""
         print(f"Hello, {self.firstName.title()}! Welcome back!");
 
+    def incrementLoginAttempts(self):
+        """Increment the value of loginAttempts."""
+        self.loginAttempts += 1;
+
+    def restLoginAttempts(self):
+        """Reset loginAttempts to 0."""
+        self.loginAttempts = 0;
+    
+    def readLoginAttempts(self):
+        """Print a statement showing the number of login attempts."""
+        print(f"{self.userName} has attempted to login {self.loginAttempts} times.");
+
 myUser = User('ajFlavors', 'aj@example.com', 'Aj', 'Ellerbee', 30);
 myUser.describeUser();
 myUser.greetUser();
@@ -34,3 +47,7 @@ yourUser.greetUser();
 theirUser = User('godofWar', 'kratos@example.com', 'Kratos', 'Arkos', '1000');
 theirUser.describeUser();
 theirUser.greetUser();
+
+theirUser.incrementLoginAttempts();
+theirUser.incrementLoginAttempts();
+theirUser.readLoginAttempts();
