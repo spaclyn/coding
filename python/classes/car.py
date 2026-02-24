@@ -17,6 +17,29 @@ class Car:
         """Print a statement showing the car's mileage."""
         print(f"This car has {self.odometerReading} miles on it.");
 
+    def updateOdometer(self, mileage):
+        """Set the odometer reading to the given value.
+        Update: Reject the change if it attempts to roll the odometer back."""
+        if mileage >= self.odometerReading:
+            self.odometerReading = mileage;
+        else:
+            print("You can't roll back an odometer!");
+
+    def incrementOdometer(self, miles):
+        """Add the given amount to the odometer reading."""
+        self.odometerReading += miles;
+
+myUsedCar = Car('suburu', 'Outback', 2015);
+print(myUsedCar.getDescriptiveName());
+
+myUsedCar.updateOdometer(23500);
+myUsedCar.readOdometer();
+
+myUsedCar.incrementOdometer(100);
+myUsedCar.readOdometer();
+
 myNewCar = Car('audi', 'a4', 2020);
 print(myNewCar.getDescriptiveName());
+myNewCar.odometerReading = 23;
+myNewCar.updateOdometer(4000);
 myNewCar.readOdometer();
