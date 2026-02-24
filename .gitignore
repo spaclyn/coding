@@ -7,3 +7,4 @@ python/numbers.py
 .gitignore
 .vscode/launch.json
 python/functions/__pycache__/pizza.cpython-313.pyc
+python/classes/__pycache__/restaurant.cpython-313.pyc
