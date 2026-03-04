@@ -36,16 +36,27 @@ class User:
         """Print a statement showing the number of login attempts."""
         print(f"{self.userName} has attempted to login {self.loginAttempts} times.");
 
-class Admin:
+class Privileges:
+    """A simple attempt to move privileges into a seperate class."""
+
+    def __init__(self, privileges=[]):
+        """Initialize the privileges attribute."""
+        self.privileges = privileges;
+
+    def showPrivileges(self):
+        """Show the admin's privileges."""
+        print(f"Privileges: ");
+        for privilege in self.privileges:
+            print(f"- {privilege}");
+
+class Admin(User):
     """Admin User"""
 
     def __init__(self, userName, eMail, firstName, lastName, age):
         """Initialize the admin user's attributes."""
-        super().__init__(userName, eMail, firstName, lastName, age);
-        self.privileges = [];
+        super().__init__(userName, eMail, firstName, lastName, age)
+        self.privileges = Privileges();
 
-    def showPrivileges(self):
-        """Show the admin's privileges."""
-        print(f"{self.userName} has the following privileges: ");
-        for privilege in self.privileges:
-            print(f"- {privilege}");
+myAdmin = Admin('adminUser', 'admin@example.com', 'Admin', 'User', 35);
+myAdmin.privileges.privileges = ['can add post', 'can delete post', 'can ban'];
+myAdmin.privileges.showPrivileges();
