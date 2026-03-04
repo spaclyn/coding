@@ -1,4 +1,4 @@
-# A class that can be used to represent a car.
+# A class that can be used to represent a car. electric and battery included here
 
 class Car:
     """A simple attempt to represent a car."""
@@ -30,8 +30,39 @@ class Car:
     def incrementOdometer(self, miles):
         """Add the given amount to the odometer reading."""
         self.odometerReading += miles;
+class Battery:
+    """A simple attempt to model a battery for an electric car."""
+    
+    def __init__(self, batterySize=40):
+        """Initialize the battery's attributes."""
+        self.batterySize = batterySize;
 
-myUsedCar = Car('suburu', 'Outback', 2015);
+    def describeBattery(self):
+        """Print a statement describing the battery size."""
+        print(f"This car has a {self.batterySize}-kWh battery.");
+
+    def getRange(self):
+        """Print a statement about the range this battery provides."""
+        if self.batterySize == 40:
+            range = 150;
+        elif self.batterySize == 75:
+            range = 225;
+
+        print(f"This car can go about {range} miles on a full charge.");
+
+class ElectricCar(Car):
+    """Represents aaspects of a car, specific to electric vehicles."""
+
+    def __init__(self, make, model, year):
+        """Initialize attributes of the parent class."""
+        super().__init__(make, model, year);
+        self.battery = Battery();
+
+    def fillGasTank(self):
+        """Electric cars don't have gas tanks."""
+        print("This car doesn't need a gas tank!"); 
+
+"""myUsedCar = Car('suburu', 'Outback', 2015);
 print(myUsedCar.getDescriptiveName());
 
 myUsedCar.updateOdometer(23500);
@@ -44,4 +75,4 @@ myNewCar = Car('audi', 'a4', 2020);
 print(myNewCar.getDescriptiveName());
 myNewCar.odometerReading = 23;
 myNewCar.updateOdometer(4000);
-myNewCar.readOdometer();
+myNewCar.readOdometer();"""
